@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title xml:lang="ko">Mong9 에디터 애드온</title>
+    <description xml:lang="ko">
+	    누구나 쉽고 빠르게 웹 문서를 작성할 수 있도록 만들어주는 Mong9 에디터!
+    </description>
+    <version>1.2.1</version>
+    <date>2023-07</date>
+    <author email_address="admin@mong9.com" link="https://editor.mong9.com">
+        <name xml:lang="ko">Mong9</name>
+    </author>
+
+  	<extra_vars>
+        <var name="insert_media_editor" type="select">
+            <title xml:lang="ko">웹문서 제작에디터</title>
+            <description xml:lang="ko">미디어 삽입 에디터를 선택하세요.</description>
+            <options value="all">
+                <title xml:lang="ko">문서,댓글작성 에디터</title>
+            </options>
+            <options value="document">
+                <title xml:lang="ko">문서작성 에디터</title>
+            </options>
+            <options value="comment">
+                <title xml:lang="ko">댓글작성 에디터</title>
+            </options>
+        </var>
+  	</extra_vars>
+</addon>
