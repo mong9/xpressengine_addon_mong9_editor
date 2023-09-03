@@ -137,25 +137,4 @@ if(stripos($__Context->js_file['targetie'], 'gt') === 0){ ?><!--<?php } ?><![end
 
 } // mong9editor_editor
 
-function mong9_enqueue_script($Dname,$Durl) {
-	Context::addJsFile($Durl);
-}
-function mong9_enqueue_style($Dname,$Durl,$Detc) {
-	Context::addCSSFile($Durl);
-}
-
-// get language
-function get_mong9_language($language) {
-	return (file_exists(MONG9_SOURCE_DIR.'js/langs/'. $language .'.js')) ? $language : 'en';
-}
-
-// get font family
-function get_mong9_font_family($language) {
-	return (file_exists(MONG9_SOURCE_DIR.'js/font-family/'. $language .'.js')) ? $language : 'en';
-}
-
-function get_example_html($language) {
-	return (file_exists(MONG9_SOURCE_DIR.'example/'. $language .'.html')) ? $language : 'en';
-}
-
 ?>
